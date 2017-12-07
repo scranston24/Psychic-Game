@@ -10,13 +10,13 @@ document.onkeyup = function(event) {
     guessesSoFar.push(userGuess);
     if (userGuess == computerGuess) {
         wins++;
-        alert('Way to go! You\'ve guesesed corrrectly. You Won!');
+        alert("The Stars are yours");
         guessesLeft = 9;
         guessesSoFar.length = 0;
     }
     else if (guessesLeft == 0){
         losses++;
-        alert('You didn\'t guess the correct letter. You lost. Let\'s try again.');
+        alert("The Stars are yours");
         guessesLeft = 9;
         guessesSoFar.length = 0;
     }
